@@ -148,9 +148,9 @@ const Skills = () => {
     {skills.map((skill)=>(
         <div className='items-center justify-center flex flex-col '>
             <h2 className='font-bold text-xl p-4'>{skill.title}</h2>
-            <div className='  flex gap-4 flex-wrap col-1 '>
+            <div className=' ml-5 flex gap-4 flex-wrap col-1 '>
                 {skill.skills.map((item)=>(
-                    <div className='bg-gray-500 flex flex-col items-center justify-center '>
+                    <div className='bg-white flex flex-col items-center justify-center '>
                         <img src={item.image} width={30} height={30}/>
                         {item.name}
                         </div>

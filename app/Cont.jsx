@@ -5,7 +5,7 @@ const Cont = () => {
     <div name="contact" className='bg-gradient-to-b from-black to-gray-800  mt-16 pt-2 flex justify-center text-white w-full h-screen p-4'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full '>
            <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-black border-gray-500 sm:text-white'>Let Connect</p>
+            <p className='text-4xl font-bold inline border-b-4 text-black sm:text-white border-gray-500 '>Let Connect</p>
             <p className='py-6'>Submit the form below to get in touch with me</p>
            </div>
          <div className='flex justify-center items-center '>
