@@ -1,11 +1,19 @@
+"use client"
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Cont = () => {
   return (
-    <div name="contact" className='bg-gradient-to-b from-black to-gray-800  mt-16 pt-2 flex justify-center text-white w-full h-screen p-4'>
-        <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full '>
+    <motion.div initial="hidden" whileInView="visible" viewport={{once:true}}  variants={{visible:{opacity:1,y:-50},
+    hidden:{opacity:0,y:0},
+    }} transition={{duration:0.6
+    }}  name="contact" className='bg-gradient-to-b from-black to-gray-800   mt-24 pt-2 flex justify-center text-white w-full h-screen p-4'>
+        <motion.div initial="hidden" whileInView="visible" viewport={{once:true}}  variants={{visible:{opacity:1,y:-50},
+    hidden:{opacity:0,y:0},
+    }} transition={{duration:0.6
+    }} className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full '>
            <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-black sm:text-white border-gray-500 '>Let Connect</p>
+            <p className='text-4xl   font-bold inline border-b-4 text-black sm:text-white border-gray-500 '>Let Connect</p>
             <p className='py-6'>Submit the form below to get in touch with me</p>
            </div>
          <div className='flex justify-center items-center '>
@@ -16,9 +24,9 @@ const Cont = () => {
 <button className=' text-white w-fit px-6 py-3 my-8 mx-auto hover:scale-110 flex items-center rounded-md bg-gradient-to-b from-cyan-500 to-blue-500  '> Let Talk</button>
             </form>
          </div>
-            </div>
+            </motion.div>
             
-    </div>
+    </motion.div>
   )
 }
 

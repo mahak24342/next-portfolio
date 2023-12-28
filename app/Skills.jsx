@@ -1,4 +1,6 @@
+"use client"
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Skills = () => {
      const skills = [
@@ -140,11 +142,20 @@ const Skills = () => {
         },
       ];
   return (
-    <div name="experience">
-<div><h1 className='text-4xl font-bold flex items-center justify-center mt-3 '>Skills</h1>
+    <motion.div initial="hidden" whileInView="visible" viewport={{once:true}}  variants={{visible:{opacity:1,y:-50},
+    hidden:{opacity:0,y:0},
+    }} transition={{duration:0.6,
+    }}  className='mt-28 ' name="experience">
+<motion.div initial="hidden" whileInView="visible" viewport={{once:true}}  variants={{visible:{opacity:1,y:-50},
+    hidden:{opacity:0,y:0},
+    }} transition={{duration:0.6,
+    }}  ><h1 className='text-4xl font-bold flex items-center justify-center mt-3 '>Skills</h1>
 <h2 className='flex items-center justify-center p-5'>Here are the some of the Skills I have Been working on past two years</h2>
-</div>
-<div>
+</motion.div>
+<motion.div initial="hidden" whileInView="visible" viewport={{once:true}}  variants={{visible:{opacity:1,y:-50},
+    hidden:{opacity:0,y:0},
+    }} transition={{duration:0.6
+    }}  >
     {skills.map((skill)=>(
         <div className='items-center justify-center flex flex-col '>
             <h2 className='font-bold text-xl p-4'>{skill.title}</h2>
@@ -159,8 +170,8 @@ const Skills = () => {
             </div>
             
     ))}
-</div>
-    </div>
+</motion.div>
+    </motion.div>
     
   )
 }
